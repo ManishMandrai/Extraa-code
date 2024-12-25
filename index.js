@@ -11,3 +11,17 @@ const promise = new Promise((resolve, rejecct) => {
 promise
     .then(result => console.log(result))
     .catch(error => console.log(error))
+
+
+
+const fetchData = () => {
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Data revevied!")
+        }, 4000)
+    })
+}
+
+fetchData()
+    .then (data => console.log(data))
+    .catch (error => console.log(error))
