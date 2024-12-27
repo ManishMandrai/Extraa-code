@@ -38,17 +38,17 @@ console.log(`Hello my name is ${namee} and I am ${agee} years old`);
 
 
 //Promises 
-// const fetchData = (isSuccess) => {
-//     return new Promise ((resolve, reject) => {
-//         setTimeout(() => {
-//             if (isSuccess) resolve("Data fatched")
-//                 else reject('failed to fetch data')
-//         }, 2000)
-//     })
-// }
-// fetchData(true)
-//     .then(data => console.log(data))
-//     .catch(error => console.log(error))
+const fetchData = (isSuccess) => {
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            if (isSuccess) resolve("Data fatched")
+                else reject('failed to fetch data')
+        }, 2000)
+    })
+}
+fetchData(true)
+    .then(data => console.log(data))
+    .catch(error => console.log(error))
 
 
 // Async/Await
